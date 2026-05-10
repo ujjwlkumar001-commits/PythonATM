@@ -23,73 +23,58 @@ print("""Option-
 Check Balance cilck: 1
 Withdraw Money click: 2
 Deposit Money: clcik: 3""")
-#action1
+
 action = int(input("Enter from option..."))
+
 if(action==1):
-    action2 = int(input("Enter Pin"))
-elif(action==2):
-    action3 = int(input("Enter Ammount"))
-elif(action==3):
-    action4 = int(input("Enter Ammount"))
-elif(action>=4):
-    print("Option doesn't exhist")
-#Pin1
-action2b = action2
-if(action2b==123098):
-    print("5,000")
-elif(action2b==739104):
-    print("4,000")
-elif(action2b==185036):
-    print("8,000")
-elif(action2b==921477):
-    print("10,000")
-elif(action2b==508329):
-    print("2,000")
-else:
-    print("Pin didn't macthed.")
-#action1.1
-action = int(input("Enter from option 2 and 3..."))
+    action_for_balance_check = int(input("Enter Pin"))
+    a_f_b_c = action_for_balance_check
+    if(a_f_b_c==123098):
+        print("5,000")
+    elif(a_f_b_c==739104):
+        print("4,000")
+    elif(a_f_b_c==185036):
+        print("8,000")
+    elif(a_f_b_c==921477):
+        print("10,000")
+    elif(a_f_b_c==508329):
+        print("2,000")
+    else:
+        print("Pin didn't macthed.")
+
 if(action==2):
-    action3 = int((input("Enter Ammount")))
-elif(action==3):
-    action4 = int(input("Enter Ammount"))
-elif(action>=4):
+    action_for_withdraw_money = int(input("Enter Ammount"))
+    a_f_w_m = action_for_withdraw_money
+    a_f_w_m1 = int(input("Enter Pin..."))
+    if(a_f_w_m1==123098):
+        print("Current Balance:", 5000-a_f_w_m)
+    elif(a_f_w_m1==739104):
+        print("Current Balance:", 4000-a_f_w_m)
+    elif(a_f_w_m1==185036):
+        print("Current Balance:", 8000-a_f_w_m)
+    elif(a_f_w_m1==921477):
+        print("Current Balance:", 10000-a_f_w_m)
+    elif(a_f_w_m1==508329):
+        print("Current Balance:", 2000-a_f_w_m)
+    else:
+        print("Pin didn't macthed. Try agin..")
+    
+if(action==3):
+    action_for_deposit_money = int(input("Enter Ammount"))
+    a_f_d_m = action_for_deposit_money
+    a_f_d_m1 = int(input("Enter Pin..."))
+    if(a_f_d_m1==123098):
+      print("Current Balance:", 5000+a_f_d_m)
+    elif(a_f_d_m1==739104):
+      print("Current Balance:", 4000+a_f_d_m)
+    elif(a_f_d_m1==185036):
+      print("Current Balance:", 8000+a_f_d_m)
+    elif(a_f_d_m1==921477):
+      print("Current Balance:", 10000+a_f_d_m)
+    elif(a_f_d_m1==508329):
+      print("Current Balance:", 2000+a_f_d_m)
+    else:
+      print("Pin didn't macthed. Try agin..")
+
+if(action>=4):
     print("Option doesn't exhist")
-#WithdrawMoney1
-action2b1 = action3
-action2a = int(input("Enter Pin..."))
-if(action2a==123098):
-    print("Current Balance:", 5000-action3)
-elif(action2==739104):
-    print("Current Balance:", 4000-action3)
-elif(action2==185036):
-    print("Current Balance:", 8000-action3)
-elif(action2==921477):
-    print("Current Balance:", 10000-action3)
-elif(action2==508329):
-    print("Current Balance:", 2000-action3)
-else:
-    print("Pin didn't macthed. Try agin..")
-    #action1.1
-action = int(input("Enter from option 2 and 3..."))
-if(action==2):
-    action3 = int((input("Enter Ammount")))
-elif(action==3):
-    action4 = int(input("Enter Ammount"))
-elif(action>=4):
-    print("Option doesn't exhist")
-#Deposit money1
-action3a1 = action4
-action3a = int(input("Enter Pin..."))
-if(action2a==123098):
-    print("Current Balance:", 5000+action4)
-elif(action2a==739104):
-    print("Current Balance:", 4000+action4)
-elif(action2a==185036):
-    print("Current Balance:", 8000+action4)
-elif(action2a==921477):
-    print("Current Balance:", 10000+action4)
-elif(action2a==508329):
-    print("Current Balance:", 2000+action4)
-else:
-    print("Pin didn't macthed. Try agin..")
